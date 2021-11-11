@@ -31,7 +31,7 @@
         },
         "DATABASE": {
             "description": "mongodb"
-            "required": ""
+            "value": ""
         }
 
     },
