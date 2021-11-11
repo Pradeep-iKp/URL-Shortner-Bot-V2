@@ -1,13 +1,13 @@
 {
-    "name": "Bitly_Bot",
-    "description": "Make short link by using Bitly API key",
+    "name": "Url-Shortner",
+    "description": "Make short link by using this bot",
     "keywords": [
         "telegram",
-        "Bitly"
+        "urlshort"
     ],
-    "website": "https://github.com/MrVishal2k2",
-    "repository": "https://github.com/Mrvishal2k2/TG-ShortLinkBot/tree/Bitly",
-    "logo": "https://telegra.ph//file/b3461e7795bb258688623.jpg",
+    "website": "https://github.com/Pradeep-iKp",
+    "repository": "https://github.com/Pradeep-iKp/URL-Shortner-Bot-V2",
+    "logo": "https://telegra.ph/file/100f495fa2644d32cca89.jpg",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.Get from Botfather bot",
@@ -21,13 +21,21 @@
             "description": "Get this value from https://my.telegram.org",
             "value": ""
         },
-        "BITLY_KEY": {
+        "BITLY_API": {
             "description": "Bitly API See Readme for further details",
             "required": false
         },
-       "OWNER": {
-            "description": "OWNER username without @",
+        "CITTLY_API": {
+            "description": "take from cuttly"
+            "required": false 
+            
+        "BOT_OWNER": {
+            "description": "OWNER ID",
             "required": false
+        },
+        "DATABASE": {
+            "description": "mongodb"
+            "required": ""
         }
 
     },
