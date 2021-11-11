@@ -28,7 +28,7 @@
         "CITTLY_API": {
             "description": "take from cuttly"
             "required": false 
-            
+        },  
         "BOT_OWNER": {
             "description": "OWNER ID",
             "required": false
