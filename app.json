@@ -28,10 +28,6 @@
         "BOT_OWNER": {
             "description": "OWNER ID",
             "required": false
-        },
-        "DATABASE": {
-            "description": "Get this value from https://mongodb.com"
-            "value": ""
         }
 
     },
