@@ -30,7 +30,7 @@
             "required": false
         },
         "DATABASE": {
-            "description": "mongodb"
+            "description": "Get this value from https://mongodb.com"
             "value": ""
         }
 
