@@ -24,7 +24,7 @@ BUTTONS = InlineKeyboardMarkup(
         ]]
     )
 
-@Client.on_message(filters.private & filters('https?://[^\s]+'))
+@Client.on_message(filters.private & filters.regex(r'https?://[^\s]+'))
 async def reply_shortens(bot, update):
     if not await db.is_user_exist(update.from_user.id):
         await db.add_user(update.from_user.id)
@@ -41,7 +41,7 @@ async def reply_shortens(bot, update):
         disable_web_page_preview=True
     )
 
-@Client.on_inline_query(filters('https?://[^\s]+'))
+@Client.on_inline_query(filters.regex(r'https?://[^\s]+'))
 async def inline_short(bot, update):
     link = update.matches[0].group(0)
     shorten_urls = await short(update.id, link)
