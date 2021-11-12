@@ -1,0 +1,48 @@
+{
+    "name": "Url-Shortner",
+    "description": "A Telegram bot that can short long URL.",
+    "keywords": [
+        "",
+        ""
+    ],
+    "repository": "https://github.com/Pradeep-iKp/URL-Shortner-Bot-V2,",
+    "website": "https://github.com/Pradeep-iKp,",
+    "env": {
+        "API_HASH": {
+            "description": "",
+            "required": "True"
+        },
+        "API_ID": {
+            "description": "",
+            "required": "True"
+        },
+        "BOT_TOKEN": {
+            "description": "",
+            "required": "True"
+        },
+        "DATABASE": {
+            "description": "",
+            "required": "True"
+        },
+        "BOT_OWNER": {
+            "description": "",
+            "required": "True"
+        },
+        "BITLY_API": {
+            "description": "",
+            "required": "True"
+        }
+    },
+    "stack": "heroku-20",
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
